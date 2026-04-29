@@ -15,14 +15,17 @@ public class App {
 
     public static void main(String[] args) {
 
-        Teacher alice = new Teacher("Alice","W.");
-        Course java = new Course("Java");
-        alice.addCourse(java);
+//        Teacher alice = new Teacher("Alice","W.");
+//        Course java = new Course("Java");
+//        alice.addCourse(java);
 
         em.getTransaction().begin();
 
-        em.persist(alice);
-        em.persist(java);
+//        em.persist(alice);
+//        em.persist(java);
+//
+//        Teacher alice = em.find(Teacher.class, 1);
+//        alice.setLastname("Wonderland");
 
         em.getTransaction().commit();
 
